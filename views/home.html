@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papa's Pizza</title>
+    <!-- link to javascript -->
+    <script src = "/js/pizza.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="images/pizza-icon.jpg">
@@ -20,23 +22,27 @@
             <hr>
             <p>Poppa’s Pizza serves up fresh, handcrafted pizzas with 
                 bold flavors and a warm, family-friendly vibe.</p>
-            <a id="contact-button" href="#" role="button">Contact Us</a>
+            <a id="contact-button" href="/contact-us" role="button">Contact Us</a>
         </header>
-        <form id="pizza-form" action="#" method="get">
+        <form id="pizza-form" action="submit-order" method="post">
             
             <!-- Contact Info -->
             <fieldset>
                 <legend>Contact Info</legend>
+                <span id="err-fname" class="error"> First Name cannot be empty!</span>
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
+                <span id="err-lname" class="error"> Last Name cannot be empty!</span>
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname">
+                <span id="err-email" class="error">Email cannot be empty!</span>
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
              </fieldset>
 
             <!-- Pickup or Delivery -->
             <fieldset>
+                <span id="err-method" class="error"> Last Name cannot be empty!</span>
                 <legend>Select Pickup or Delivery</legend>
                 <label for="pickup">
                     <input type="radio" id="pickup" name="method"
@@ -63,6 +69,7 @@
 
             <!-- Pizza Size -->
             <fieldset>
+                <span id="err-size" class="error">Please select a size</span>
                 <legend>Pizza Size</legend>
                 <select id="size" name="size">
                     <option value="none">-- Select a Size --</option>

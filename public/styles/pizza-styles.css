@@ -99,3 +99,9 @@ label {
         width: 90%;
     }
 }
+
+/* error message */
+.error {
+    color: darkred;
+    display: none;
+}
