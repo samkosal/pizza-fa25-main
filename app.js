@@ -16,6 +16,8 @@ const orders = [];
 // Define the port number where our server will listen 
 const PORT = 3000;
 
+app.set('view engine', 'ejs');
+
 // Define a default "route" ('/')
 // req: contains information about the incoming request
 // res: allows us to send back a response to the client

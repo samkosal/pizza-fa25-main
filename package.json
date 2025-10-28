@@ -8,12 +8,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "type": "module",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samkosal/pizza-fa25-main.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samkosal/pizza-fa25-main/issues"
+  },
+  "homepage": "https://github.com/samkosal/pizza-fa25-main#readme",
+  "description": ""
 }
